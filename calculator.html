@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="abc">
+      <div class="output">
+       <P class="calculation-p"></P>
+       <P class="answer-p"></P>
+       <button class="back-space-btn"></button>
+      </div>
+     <div class="input">
+      <button class="input-c-btn" onclick="
+        clearScreen();
+      ">C</button>
+      <button class="input-btn">( )</button>
+      
+      <button class="input-btn">%</button>
+      <button class="input-btn" onclick="
+        inputNumber('/')
+      ">/</button>
+      <button class="input-btn" onclick="
+        inputNumber('7');
+      ">7</button>
+      <button class="input-btn" onclick="
+        inputNumber('8');
+      ">8</button>
+      <button class="input-btn" onclick="
+        inputNumber('9');
+      ">9</button>
+      <button class="input-btn" onclick="
+        inputNumber('*')
+      ">X</button>
+      <button class="input-btn" onclick="
+        inputNumber('4');
+      ">4</button>
+      <button class="input-btn" onclick="
+        inputNumber('5');
+      ">5</button>
+      <button class="input-btn" onclick="
+        inputNumber('6');
+      ">6</button>
+      <button class="input-btn" onclick="
+        inputNumber('-');
+      ">-</button>
+      <button class="input-btn" onclick="
+        inputNumber('1')
+      ">1</button>
+      <button class="input-btn" onclick="
+        inputNumber('2');
+      ">2</button>
+      <button class="input-btn" onclick="
+        inputNumber('3');
+      ">3</button> 
+      <button class="input-btn" onclick="
+        inputNumber('+')
+      ">+</button>
+
+      <button class="input-btn">+/-</button>
+
+      <button class="input-btn" onclick="
+        inputNumber('0')
+      ">0</button>
+      <button class="input-btn" onclick="
+        inputNumber('.')
+      ">.</button>
+      <button class="input-equalto-btn" onclick="
+        calculationBtn();
+      ">=</button>
+   </div>
+  </div>
+  
+  <script>
+
+    const calcJs = document.querySelector('.calculation-p');
+    const ansJs = document.querySelector('.answer-p');
+
+    const answers = {
+      calcaltionText : '',
+      currentAns : ''
+    }  
+
+    function inputNumber(text){
+      answers.calcaltionText += text
+      console.log(answers.calcaltionText)
+      try{
+        answers.currentAns = eval(x)
+      }
+      catch(e){
+      }
+
+      console.log(answers.currentAns)
+      calcJs.innerText = answers.calcaltionText;
+
+      try{
+        ansJs.innerText = eval(answers.calcaltionText);
+      }
+      catch(e){
+      }
+      
+    }
+    function calculationBtn(){
+      console.log(answers.calcaltionText)
+      calcJs.innerText = eval(answers.calcaltionText);
+      answers.calcaltionText = ''
+      ansJs.innerText = '';
+    }
+
+    function clearScreen(){
+      ansJs.innerText = '';
+      calcJs.innerText = '';
+      answers.calcaltionText = '';
+      answers.calcaltionText = '';
+
+    }
+  </script>
+
+</body>
+</html>
