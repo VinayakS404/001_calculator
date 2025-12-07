@@ -27,3 +27,4 @@ A simple web-based calculator built with HTML, CSS and JavaScript — ideal for 
 1. Clone or download the repository:  
    ```bash
    git clone https://github.com/VinayakS404/001_calculator.git
+![Calculator Demo](./delete\ (1).png)
