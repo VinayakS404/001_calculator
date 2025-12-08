@@ -50,11 +50,7 @@ body{
   border: none;
   height: 68px;
   border-radius: 50%;
-<<<<<<< HEAD
-  background-color: #5784ff;
-=======
   background-color: rgb(87, 132, 255);
->>>>>>> 2600597feacd0c470f356b584f4c0e5351a39a2a
   color: rgb(255, 255, 255);
   font-size: 28px;
   cursor: pointer;
