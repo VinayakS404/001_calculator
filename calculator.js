@@ -1,5 +1,5 @@
-  const calcJs = document.querySelector('.calculation-p');
-  const ansJs = document.querySelector('.answer-p');
+  const calcJs = document.querySelector('.js-calculation-p');
+  const ansJs = document.querySelector('.js-answer-p');
 
   const answers = {
     calcaltionText : '',
@@ -30,6 +30,7 @@
     calcJs.innerText = eval(answers.calcaltionText);
     answers.calcaltionText = ''
     ansJs.innerText = '';
+
   }
 
   function clearScreen(){

@@ -20,6 +20,7 @@ body{
   color: red;
   font-size: 28px;
   cursor: pointer;
+  transition: background-color 0.15s;
 }
 .input-btn{
   border: none;
@@ -29,16 +30,16 @@ body{
   color: rgb(137, 218, 253);
   font-size: 28px;
   cursor: pointer;
+  transition: background-color 0.15s, color 0.1s;
 }
 .back-space-btn{
   border: none;
   height: 40px;
-  border-radius: 10px;
-  width: 51%; 
+  width: 40px; 
   position: relative;
-  left: 179px;
+  left: 225px;
   display: block;
-  background-image: url('delete (1).png');
+  background-image: url('delete-blue.png');
   background-size: 35Px;
   background-position: center;
   background-color: transparent;
@@ -46,6 +47,7 @@ body{
   cursor: pointer;
   margin-top: 10px;
 }
+
 .input-equalto-btn{
   border: none;
   height: 68px;
@@ -54,6 +56,7 @@ body{
   color: rgb(255, 255, 255);
   font-size: 28px;
   cursor: pointer;
+  transition: background-color 0.15s, color 0.1s;
 }
 .abc {
   margin-top: 30px;
@@ -97,4 +100,27 @@ body{
 }
 .output{
   padding-top: 28px;
+}
+.input-btn:hover,.input-c-btn:hover{
+    background-color: rgb(84, 100, 105);
+}
+.input-btn:active{
+    background-color: rgb(54, 61, 62);
+}
+.input-equalto-btn:hover{
+  background-color: rgb(135, 166, 252);
+}
+.input-equalto-btn:active{
+  background-color: rgb(255, 255, 255);
+  color: rgb(87, 132, 255);
+}
+.input-c-btn:active{
+  background-color: rgb(75, 51, 51);
+  color: white
+}
+.back-space-btn:hover{
+  background-image: url('delete-hower.png');
+}
+.back-space-btn:active{
+  background-image: url('delete-white.png');
 }

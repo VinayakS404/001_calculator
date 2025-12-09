@@ -7,68 +7,70 @@
   <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-  <div class="abc">
-      <div class="output">
-       <P class="calculation-p"></P>
-       <P class="answer-p"></P>
-       <button class="back-space-btn"></button>
+  <div class="abc js-abc">
+      <div class="output js-output">
+       <P class="calculation-p js-calculation-p"></P>
+       <P class="answer-p js-answer-p"></P>
+       <button class="back-space-btn js-back-space-btn" onclick="
+        changeDeleteImg();
+       "></button>
       </div>
      <div class="input">
-      <button class="input-c-btn" onclick="
+      <button class="input-c-btn js-input-c-btn" onclick="
         clearScreen();
       ">C</button>
-      <button class="input-btn">( )</button>
+      <button class="input-btn js-input-btn">( )</button>
       
-      <button class="input-btn">%</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn">%</button>
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('/')
       ">/</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('7');
       ">7</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('8');
       ">8</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('9');
       ">9</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('*')
       ">X</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('4');
       ">4</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('5');
       ">5</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('6');
       ">6</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('-');
       ">-</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('1')
       ">1</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('2');
       ">2</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('3');
       ">3</button> 
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('+')
       ">+</button>
 
-      <button class="input-btn">+/-</button>
+      <button class="input-btn js-input-btn">+/-</button>
 
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('0')
       ">0</button>
-      <button class="input-btn" onclick="
+      <button class="input-btn js-input-btn" onclick="
         inputNumber('.')
       ">.</button>
-      <button class="input-equalto-btn" onclick="
+      <button class="input-equalto-btn js-input-equalto-btn" onclick="
         calculationBtn();
       ">=</button>
    </div>
