@@ -7,7 +7,10 @@
   }  
 
   function inputNumber(text){
-    answers.calcaltionText += text
+    if(answers.calcaltionText.length < 15){
+      answers.calcaltionText += text
+    }
+//      answers.calcaltionText = '123.123.123.123'
 //    console.log(answers.calcaltionText)
 /*
     try{
@@ -16,13 +19,20 @@
     catch(e){
     }
 */
-    if( answers.calcaltionText.length >= 11){
+    
+    if( answers.calcaltionText.length > 12){
       calcJsElt.classList.remove('calculation-p')
-      calcJsElt.classList.add('calculation-p-change-11')
+      calcJsElt.classList.remove('calculation-p-change-9')
+      calcJsElt.classList.add('calculation-p-change-12')
+    }
+    else if( answers.calcaltionText.length > 9){
+      calcJsElt.classList.remove('calculation-p')
+      calcJsElt.classList.add('calculation-p-change-9')
     }
     else{
       calcJsElt.classList.add('calculation-p')
-      calcJsElt.classList.remove('calculation-p-change-11')
+      calcJsElt.classList.remove('calculation-p-change-9')
+      calcJsElt.classList.remove('calculation-p-change-12')
     }
     calcJsElt.innerText = answers.calcaltionText.replaceAll('*','x');
 

@@ -39,7 +39,7 @@ body{
   position: relative;
   left: 225px;
   display: block;
-  background-image: url('delete-blue.png');
+  background-image: url('img-folder/delete-blue.png');
   background-size: 35Px;
   background-position: center;
   background-color: transparent;
@@ -75,10 +75,11 @@ body{
   height: 63px;
   display: block;
   width: 280px;
-  padding-bottom: 10px;
-  text-align: right;
+  display: flex;            
+  justify-content: flex-end;    
+  align-items: flex-end; 
   margin: 0px;
-  font-size: 53px;
+  font-size: 55px;
   font-family: Segoe UI, Courier, monospace;
   overflow: hidden;
   color: rgb(137, 218, 253);
@@ -118,21 +119,52 @@ body{
   color: white
 }
 .back-space-btn:hover{
-  background-image: url('delete-hower.png');
+  background-image: url('img-folder/delete-hower.png');
 }
 .back-space-btn:active{
-  background-image: url('delete-white.png');
+  background-image: url('img-folder/delete-white.png');
 }
 .calculation-p-change-11{
   border: none;
   height: 63px;
   display: block;
   width: 280px;
-  padding-bottom: 10px;
   text-align: right;
   margin: 0px;
-  font-size: 45px;
+  font-size: 42px;
   font-family: Segoe UI, Courier, monospace;
   overflow: hidden;
   color: rgb(137, 218, 253);
   white-space: nowrap;
+}
+.calculation-p-change-9{
+  border: none;
+  height: 63px;
+  display: block;
+  width: 280px;
+  display: flex;            
+  justify-content: flex-end;    
+  align-items: flex-end; 
+  margin: 0px;
+  font-size: 40px;
+  font-family: Segoe UI, Courier, monospace;
+  overflow: hidden;
+  color: rgb(137, 218, 253);
+  white-space: nowrap;
+}
+.calculation-p-change-12{
+  
+  border: none;
+  height: 63px;
+  display: block;
+  width: 280px;
+  display: flex;            
+  justify-content: flex-end;    
+  align-items: flex-end; 
+  margin: 0px;
+  font-size: 33px;
+  font-family: Segoe UI, Courier, monospace;
+  overflow: hidden;
+  color: rgb(137, 218, 253);
+  white-space: nowrap;
+}
