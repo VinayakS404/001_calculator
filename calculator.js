@@ -37,7 +37,7 @@
     calcJsElt.innerText = answers.calcaltionText.replaceAll('*','x');
 
     try{
-      ansJsElt.innerText = eval(answers.calcaltionText);
+      changeUndefined()
     }
     catch(e){}
   }
@@ -57,4 +57,24 @@
     answers.calcaltionText = '';
     answers.calcaltionText = '';
 
+  }
+
+  function deleteChar(){
+    answers.calcaltionText = answers.calcaltionText.slice(0,answers.calcaltionText.length-1);
+    console.log(answers.calcaltionText)
+
+    calcJsElt.innerText = answers.calcaltionText;
+    try{
+      changeUndefined()
+    }
+    catch(e){}
+  }
+
+  function changeUndefined(){
+    if(answers.calcaltionText === ''){
+      ansJsElt.innerText = ' ';
+    }
+    else{
+      ansJsElt.innerText = eval(answers.calcaltionText);
+    }
   }
