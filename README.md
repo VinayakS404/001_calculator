@@ -19,25 +19,26 @@ A web-based calculator built with HTML, CSS, and JavaScript. Supports basic arit
 - Dynamic font resizing for long expressions
 
 - Clean, responsive, minimal UI
-
+- 
 ---
 
-## 📂 Project Structure
+📂 Project Structure
 
-001_calculator/
+```graphql
+
+002_calculator/
 │
 ├── index.html           # Main HTML file with calculator UI
 ├── calculator.css       # Styles for calculator buttons and display
 ├── calculator.js        # JavaScript logic handling input, calculation, brackets
-└── README.md            # This file
-
+└── README.md  
 
 ---
 
 ## 🛠️ Tech Stack
 - HTML  
 - CSS  
-- JS
+- JavaScript (ES2022+)
 
 ---
 
