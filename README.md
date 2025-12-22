@@ -4,11 +4,21 @@ A web-based calculator built with HTML, CSS, and JavaScript. Supports basic arit
 
 ---
 
-## 🚀 Features
-- Basic arithmetic operations: addition, subtraction, multiplication, division  
-- Clean and minimal UI (calculator.html + calculator.css)  
-- Easy to use in browser — no dependencies or build step required
-- 
+#Features
+
+- Basic arithmetic: +, -, *, /
+
+- Nested bracket support: e.g., 9(9)((9))
+
+- Auto-multiplication when number follows closing bracket
+
+- Live result preview while typing
+
+- Prevents invalid operator sequences (e.g., ++, *-)
+
+- Dynamic font resizing for long expressions
+
+- Clean, responsive, minimal UI
 
 ---
 
