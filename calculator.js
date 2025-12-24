@@ -126,6 +126,9 @@ function BracketsOnclick() {
     if(lastChar === ')'){
       addChar('*');
     }
+    if(numAry.includes(lastChar)){
+      addChar('*');
+    }
     addChar('(');
     noBrackets++;
   }
@@ -148,5 +151,18 @@ function BracketsOnclick() {
     }
     catch(e){
       return;
+    }
+  }
+
+  function signChanger(){
+    if(answers.calcaltionText.slice(0,2) === '-('){
+      answers.calcaltionText = answers.calcaltionText.slice(2,-1);
+      calcJsElt.innerText = answers.calcaltionText.replaceAll('*','x');
+      answersCalcPrint();
+    }
+    else{
+    answers.calcaltionText  = '-(' + answers.calcaltionText + ')';
+    calcJsElt.innerText = answers.calcaltionText.replaceAll('*','x');
+    answersCalcPrint();
     }
   }

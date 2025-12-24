@@ -25,7 +25,7 @@
       
       <button class="input-btn js-input-btn">%</button>
       <button class="input-btn js-input-btn" onclick="
-        inputNumber('/')
+        inputNumber('/');
       ">/</button>
       <button class="input-btn js-input-btn" onclick="
         inputNumber('7');
@@ -60,17 +60,19 @@
       <button class="input-btn js-input-btn" onclick="
         inputNumber('3');
       ">3</button> 
-      <button class="input-btn js-input-btn" onclick="
+      <button class="input-btn js-input-btn;" onclick="
         inputNumber('+')
       ">+</button>
 
-      <button class="input-btn js-input-btn">+/-</button>
+      <button class="input-btn js-input-btn" onclick="
+        signChanger();
+      ">+/-</button>
 
       <button class="input-btn js-input-btn" onclick="
-        inputNumber('0')
+        inputNumber('0');
       ">0</button>
       <button class="input-btn js-input-btn" onclick="
-        inputNumber('.')
+        inputNumber('.');
       ">.</button>
       <button class="input-equalto-btn js-input-equalto-btn" onclick="
         calculationBtn();
