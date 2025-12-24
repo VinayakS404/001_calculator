@@ -126,6 +126,9 @@ function BracketsOnclick() {
     if(lastChar === ')'){
       addChar('*');
     }
+    if(numAry.includes(lastChar)){
+      addChar('*');
+    }
     addChar('(');
     noBrackets++;
   }
