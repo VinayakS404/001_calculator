@@ -1,24 +1,46 @@
 # 001_calculator
 
-A simple web-based calculator built with HTML, CSS and JavaScript — ideal for basic arithmetic operations via a clean user interface.
+A web-based calculator built with HTML, CSS, and JavaScript. Supports basic arithmetic, nested brackets, auto-multiplication, and live result preview. Ideal for learning and simple calculations in the browser.
 
 ---
 
-## 🚀 Features
-- Basic arithmetic operations: addition, subtraction, multiplication, division  
-- Clean and minimal UI (calculator.html + calculator.css)  
-- Easy to use in browser — no dependencies or build step required
+#Features
 
+- Basic arithmetic: +, -, *, /
+
+- Nested bracket support: e.g., 9(9)((9))
+
+- Auto-multiplication when number follows closing bracket
+
+- Live result preview while typing
+
+- Prevents invalid operator sequences (e.g., ++, *-)
+
+- Dynamic font resizing for long expressions
+
+- Clean, responsive, minimal UI
+- 
 ---
 
-## 📂 Project Structure
+📂 Project Structure
+
+```graphql
+
+002_calculator/
+│
+├── index.html         
+├── calculator.css   
+├── calculator.js     calculation, brackets
+└── README.md
+
+```
 
 ---
 
 ## 🛠️ Tech Stack
 - HTML  
 - CSS  
-- (Optional: JavaScript — if you add interactive behavior)  
+- JavaScript (ES2022+)
 
 ---
 
@@ -30,15 +52,20 @@ A simple web-based calculator built with HTML, CSS and JavaScript — ideal for 
 
 ---
 
-### ✅ Why this README works well
+###📌 License
 
-- It gives a clear **project title and short description** (what the project is, what it does). :contentReference[oaicite:1]{index=1}  
-- Lists the **features** so visitors quickly know what the calculator supports.  
-- Describes **how to run/ use** the project (no dependencies — just open the HTML). That’s especially useful for a simple static-site project.  
-- Mentions **project structure** so someone new to the repo can understand what each file is for.  
-- Includes **license & contributing guideline placeholders**, which are good for open-source hygiene. :contentReference[oaicite:2]{index=2}  
+MIT License — free to use and modify.
 
 ---
 
-If you like — I can **generate 2 variants** of README for your repo: one **basic** (just minimal) and one **detailed with screenshot, future-plan, and contributing guidelines** — you pick what you prefer. Do you want me to build those for you now?
-::contentReference[oaicite:3]{index=3}
+###📝 Future Plans
+
+- Replace eval() with a safe parser
+
+- Add keyboard input support
+
+- Add history feature for previous calculations
+
+- Theme customization (light/dark mode)
+
+---
