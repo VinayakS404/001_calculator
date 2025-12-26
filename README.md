@@ -19,7 +19,7 @@ A web-based calculator built with HTML, CSS, and JavaScript. Supports basic arit
 - Dynamic font resizing for long expressions
 
 - Clean, responsive, minimal UI
-- 
+  
 ---
 
 📂 Project Structure
