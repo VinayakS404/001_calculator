@@ -39,7 +39,7 @@ A web-based calculator built with HTML, CSS, and JavaScript. Supports basic arit
 
 ## 🛠️ Tech Stack
 - HTML  
-- CSS  
+- CSS3  
 - JavaScript (ES2022+)
 
 ---
