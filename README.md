@@ -57,15 +57,3 @@ A web-based calculator built with HTML, CSS, and JavaScript. Supports basic arit
 MIT License — free to use and modify.
 
 ---
-
-###📝 Future Plans
-
-- Replace eval() with a safe parser
-
-- Add keyboard input support
-
-- Add history feature for previous calculations
-
-- Theme customization (light/dark mode)
-
----
